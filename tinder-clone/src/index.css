@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #f9f9f9;
+  z-index: 100;
+}
+header .logo {
+  object-fit: contain;
+  height: 40px;
+}
+header .icon {
+  padding: 10px;
+}
+
+/* TinderCards */
+.tinder-cards .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.tinder-cards .swipe {
+  position: absolute;
+}
+.tinder-cards .card {
+  height: 50vh;
+  width: 600px;
+  max-width: 85vw;
+  padding: 20px;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 10px 53px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.tinder-cards .card h3 {
+  color: #fff;
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* SwipeButtons */
+.swipe-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 5vh;
+}
+.swipe-btns .MuiIconButton-root {
+  background-color: #fff;
+  box-shadow: 0 10px 53px 0 rgba(0, 0, 0, 0.3) !important;
+}
+.swipe-btns .btn-main {
+  padding: 3vw !important;
+}
+.swipe-btns .repeat {
+  color: #f5b748 !important;
+}
+.swipe-btns .left {
+  color: #ec5e6f !important;
+}
+.swipe-btns .star {
+  color: #62b4f9 !important;
+}
+.swipe-btns .right {
+  color: #76e2b3 !important;
+}
+.swipe-btns .lightning {
+  color: #915dd1 !important;
+}

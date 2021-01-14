@@ -1,0 +1,21 @@
+{
+  "name": "tinder",
+  "version": "1.0.0",
+  "description": "Tinder clone app with the MERN stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node .",
+    "serve": "concurrently \"npm run serve:e\" \"npm run serve:r\"",
+    "serve:e": "npx nodemon",
+    "serve:r": "npm start --prefix tinder-clone"
+  },
+  "keywords": [],
+  "author": "Saqib",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11"
+  }
+}
